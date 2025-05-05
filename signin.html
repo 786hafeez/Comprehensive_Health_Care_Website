@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In </title>
+    <style>
+        legend{
+            display:block;
+            padding-left: 3px;
+            padding-right: 4px;
+            border: none;
+        }
+    </style>
+    <script>
+        function validate(){
+            var pwd=document.getElementById("pwd");
+            var paswd=pwd.value;
+            var em=document.getElementById("em");
+            var email=em.value;
+            var dob=dob.value;
+            var ere=/^[a-zA-Z]+([\.]?\w+)*@\w+([\._]?\w+)*(\.\w{2,3})+$/
+            var pwdre=/^(?=.{8,})(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])
+            if(ere.test(email)){
+                if(pwdre.test(pass)){
+                    if(cpass==pass){
+                        
+                            alert("done");
+                            return  true;
+                        }
+        else{
+                        alert("invalid");
+                        pwd.style.border="blue solid 4px";
+                        pwd.placeholder="invalid";
+                        pwd.value='';
+                        pwd.placeholder="invalid";
+                        return false;
+            }
+        }
+        else{
+                        alert("invalid");
+                        em.style.border="green solid 4px";
+                        em.placeholder="invalid";
+                        em.value='';
+                        em.placeholder="invalid";
+                        return false;
+            }
+    }   
+        }
+        
+</script>
+</head>
+<body bgcolor="aquagreen">
+<center>
+<h1><b>LOGIN </b></h1>
+<form>
+<fieldset style="width:400px">
+<legend>LOGIN FORM </legend>
+<table>
+        <tr>
+        <input type="UserName" id="e" placeholder="UserName"required>
+        </tr>
+        <br><br>
+        <tr>
+        <input type="password" id="pwd" placeholder="PASSWORD"required maxlength="10">
+        </tr>
+        <br><br>
+        <tr><th>Dont't have an account?<a href="signup.html">SIGN UP</a></tr></th>
+        <tr><input type="submit" onclick="return validate()" value="Sign In"formaction="wt_project.html">
+            </tr>
+        </table>
+    </fieldset>
+</form>
+</center>     
+</body>
+</html>

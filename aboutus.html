@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <p>Health care, or healthcare, is the improvement of health via the prevention, diagnosis, treatment, amelioration or cure of disease, illness, injury, and other physical and mental impairments in people. Health care is delivered by health professionals and allied health fields. Medicine, dentistry, pharmacy, midwifery, nursing, optometry, audiology, psychology, occupational therapy, physical therapy, athletic training, and other health professions all constitute health care. It includes work done in providing primary care, secondary care, and tertiary care, as well as in public health.</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="C:\desktop\hafeez.jpg" alt="WELCOME" style="width: 550px;">
+      <div class="container">
+        <h2>MOHD ABDUL HAFEEZ</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Student at Vardhaman College of Engineering[B.tech 2nd Year]</p>
+        <p>Email-id:mohdhafeez3646@gmail.com</p>
+        <p>Contact No:+91 9392643646</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="C:\Users\91939\OneDrive\Pictures\manmath .jpg" alt="manmath" style="width: 550px;">
+      <div class="container">
+        <h2>KODHALE MANMATH</h2>
+        <p class="title">Developer</p>
+        <p>Student at Vardhaman College of Engineering[B.tech 2nd Year]</p>
+        <p>Email-id:kodhalemanmath239@gmail.com</p>
+        <p>Contact No:+91 9515716874</p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="C:\Users\91939\OneDrive\Pictures\WhatsApp Image 2023-07-02 at 21.42.25.jpg" alt="" style="width: 550px;height: 550px;">
+      <div class="container">
+        <h2>K PRANAY GOUD</h2>
+        <p class="title">Director</p>
+        <p>Student at Vardhaman College of Engineering[B.tech 2nd Year]</p>
+        <p>Email-id:pranaykotha84@gmail.com</p>
+        <p>Contact NO:+91 8688793347</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
