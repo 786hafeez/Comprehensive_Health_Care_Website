@@ -1,0 +1,10 @@
+
+---
+
+### ✅ No `requirements.txt` needed
+
+Since it's a static website (HTML/CSS/JS), **you don’t need a `requirements.txt`** unless you're integrating Python-based backend features (like Flask or FastAPI).
+
+---
+
+Would you like a sample HTML `index.html` template to get started or improve the UI?
